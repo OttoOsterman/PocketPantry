@@ -197,6 +197,7 @@
                                         userInput += $(this).val() + ',';
                                     }
                             );
+                            userInput = userInput.replace(/\s+/g, '+');
                             return userInput;
                         }
 
