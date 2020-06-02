@@ -260,9 +260,9 @@
                             var spinner = new Spinner(opts).spin(target);
 
                             $.ajax({
-                                url: "http://pocketpantry.azurewebsites.net/theprox.php?url=https://www.food2fork.com/api/search",
+                                url: "http://pocketpantry.azurewebsites.net/theprox.php?url=https://www.recipesapi.herokuapp.com/api/search",
                                 type: "GET",
-                                data: {key: "8bf002c9f347185cbda5f0cf1f34261c", q: search.slice(0, -1)},
+                                data: {key: "", q: search.slice(0, -1)},
                                 dataType: "json",
                                 /**
                                  * @property {string} recipes
@@ -298,7 +298,7 @@
                                 }
                                 ,
                                 error: function () {
-                                    alert("Something went wrong :(");
+                                    alert("It seems something went wrong :(");
                                     spinner.stop();
                                 }
                             });
