@@ -194,7 +194,7 @@
                         function getSearchBox() {
                             var userInput = "";
                             $(".form-wrapper input").each(function () {
-                                        userInput += $(this).val() + ',';
+                                        userInput += $(this).val() + '%20';
                                     }
                             );
                             userInput = userInput.replace(/\s+/g, '%20');
