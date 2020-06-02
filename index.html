@@ -197,14 +197,14 @@
                                         userInput += $(this).val() + ',';
                                     }
                             );
-                            userInput = userInput.replace(/\s+/g, '+');
+                            userInput = userInput.replace(/\s+/g, '%20');
                             return userInput;
                         }
 
                         function getOtherSearchBox() {
                             var recipeSearch = "";
                             recipeSearch = $('#recipeSearch').val() + ',';
-                            recipeSearch = recipeSearch.replace(/\s+/g, '+');
+                            recipeSearch = recipeSearch.replace(/\s+/g, '%20');
                             return recipeSearch;
                         }
 
